@@ -27,8 +27,49 @@ keypoints:
     can check your code for compliance with PEP8.
 
 ## Use assertions to check for internal errors.
+The use of *assert* enables a helpful message to be displayed in the event that a runtime exception occurs triggered by a 
+particular condition not being met. A classic 
+example is an inadvertent division by zero, which could be caught by checking whether the denominator 
+vanishes.  Introducing *assert*s can help debug complex code, and also  
+make python scripts more portable. 
 
-FIXME
+This illustrative example is taken from *Learning Scientific Programming with Python* by 
+Christian Hill (see reading list on module Canvas page for further information). 
+
+~~~
+def cross_product(a,b):
+    assert len(a) == len(b) == 3, 'Vectors a,b must be three-dimensional'
+    return [a[1]*b[2] - a[2]*b[1],
+            a[2]*b[0] - a[0]*b[2],
+            a[0]*b[1] - a[1]*b[0]] 
+
+cross_product([1,2,-1],[2,0,-1,3])    # Ooops...
+~~~
+{: .python}
+~~~
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+<ipython-input-8-cd8b29a450c3> in <module>()
+----> 1 cross_product([1,2,-1],[2,0,-1,3])    # Ooops...
+
+<ipython-input-7-7b7186ef1bd1> in cross_product(a, b)
+      1 def cross_product(a,b):
+----> 2     assert len(a) == len(b) == 3, 'Vectors a,b must be three-dimensional'
+      3     return [a[1]*b[2] - a[2]*b[1],
+      4             a[2]*b[0] - a[0]*b[2],
+      5             a[0]*b[1] - a[1]*b[0]] 
+
+AssertionError: Vectors a,b must be three-dimensional
+~~~
+{: .output}
+~~~
+cross_product([1,2,-1],[2,0,-1])    # That's better!
+~~~
+{: .python}
+~~~
+[-2, -1, -4]
+~~~
+{: .output}
 
 ## Use docstrings to provide online help.
 
@@ -43,7 +84,7 @@ def average(values):
 
     if len(values) == 0:
         return None
-    return sum(values) / average(values)
+    return sum(values) / len(values)
 
 help(average)
 ~~~
