@@ -45,9 +45,9 @@ Re-import the data using these arguments to give the DataTable a meaningful shap
 ## Calculations
 
 We can add new columns to the table, calculated from the existing ones.
-You may recall that we need the distance, calculated from the magnitude $$m$$
-as $$D=10^{\frac{27 + m}{5}}$$ (ie. assuming that the galaxies all have absolute magnitude 
-$$M=-22$$). We can do that as
+You may recall that we need the distance, calculated from the magnitude $m$
+as $D=10^{\frac{27 + m}{5}}$ (ie. assuming that the galaxies all have absolute magnitude 
+$M=-22$). We can do that as
 
 ~~~
 data["D"] = 10 ** ((27 + data["m"]) / 5)
