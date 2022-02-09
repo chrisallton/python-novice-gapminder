@@ -47,7 +47,7 @@ You will need to use git and GitLab to communicate your work between your two
 computers. We also want git to be able to work with Jupyter notebooks
 efficiently. The **pilot** should now:
 
-* Set up a new repository on [GitLab](http://137.44.14.117:8100/)
+* Set up a new repository on [GitLab](https://py-ph353.swan.ac.uk/)
 * Clone it to your home directory
 * Add the co-pilot as a Master
 * Download the file [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip)
