@@ -68,7 +68,9 @@ $ git-nbmergedriver config --enable --global
 The **co-pilot** should then:
 
 * Clone the repository to your home directory
+{% comment %}
 * Run the above two commands to enable git to deal with Jupyter notebooks
+{% endcomment %}
 
 For the remainder of the session, the pilot should primarily have their eyes 
 on the Juypter Notebook or Python program, while the co-pilot should have 
