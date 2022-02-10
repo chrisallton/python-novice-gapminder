@@ -36,7 +36,7 @@ is being written, so as to spot mistakes as they are introduced.
 
 ## Pair up
 
-Your allocated pairings are shown on the projector screen. Find your
+Your allocated pairings were shown on the Canvas page. Find your
 counterpart and set yourselves up on adjacent computers. Decide who is going
 to act as the pilot first.
 
