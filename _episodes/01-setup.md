@@ -39,13 +39,15 @@ The data we will be using is taken from the [gapminder][gapminder] dataset.
 To obtain it, download and unzip the file
 [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
 In order to follow the presented material, you should launch a Jupyter
-notebook in the root directory. Change directory to the root of the gapminder
-data, and then run
+notebook in the root directory. Change directory to the root of the gapminder data, and then type the following
 
 ~~~
+$ source ph353-activate
 $ jupyter notebook
 ~~~
 {: .bash}
+
+The "source ph353-activate" is needed on these Linux PC to initialise some settings.
 
 We're now ready to start.
 
